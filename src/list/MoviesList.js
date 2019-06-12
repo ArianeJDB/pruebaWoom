@@ -1,12 +1,26 @@
 import React from 'react';
+import Movie from '../movie/Movie'
+import './_moviesList.scss'
 
 class MoviesList extends React.Component {
   render() {
     return (
-      <p>{this.props.getMovies}
+      <ul className="list">
       {this.props.movies
-        .map(item => item.title)}</p>
+        .map(item => {
+          return (
+            <li className="list_item">
+              <Movie 
+              title={item.title}
+              image={item.image}
+              rating={item.rating}
+              id={item.id}/>
+            </li>
+          )
+        })}
+        </ul>
     )
+    
   }
 }
 

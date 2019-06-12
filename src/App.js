@@ -1,9 +1,13 @@
 import React from 'react';
-//import {fetchMovies} from './services/fetchMovies';
+import {fetchMovies} from './services/fetchMovies';
 import './App.scss';
-import MoviesList from './list/MoviesList';
+import Home from './home/Home'
+import {Switch, Route} from 'react-router-dom';
+import MovieDetail from './movieDetail/MovieDetail'
+// import MoviesList from './list/MoviesList';
 
-class App extends React.Component {
+class App extends React.Component
+ {
   constructor(props) {
     super(props);
     
@@ -17,29 +21,31 @@ class App extends React.Component {
   }
   
   getMovies(){
-    fetch('https://eeb98180-236b-43f6-be83-01af4d1d548f.mock.pstmn.io/test')
-      .then(response => response.json())
+    fetchMovies()
       .then(data => {
-        console.log(data);
         this.setState({
           movies: data
-        })
-         
+        })     
   });
 }
-
-
   render() {
-    
     return (
-      
-      <React.Fragment>
-      <h1>Mi listado de pelis</h1>
-      <MoviesList 
-      getmovies={this.getMovies}
-      movies={this.state.movies}
-      /> 
-      </React.Fragment>
+      <Switch>
+        <Route exact path="/" render={() => 
+          <Home 
+            movies={this.state.movies}
+          />
+        }
+      />
+      <Route path="/detail/:movie" render={(takeParams) => 
+        <MovieDetail 
+          takeParams={takeParams}
+          movies={this.state.movies}
+          // resetFilterName={this.resetFilterName}
+        />
+       }
+       />
+      </Switch>
     );
   }
 }
