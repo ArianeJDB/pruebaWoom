@@ -15,7 +15,13 @@ class App extends React.Component
     this.getMovies = this.getMovies.bind(this);
   }
   componentDidMount(){
-    this.getMovies();
+    const LS = JSON.parse(localStorage.getItem('data'));
+    if(!LS || !LS.length) {
+      this.getMovies();
+    } else {
+      this.setState({movies: LS});
+    }
+    
   }
   
   getMovies(){
@@ -23,7 +29,7 @@ class App extends React.Component
       .then(data => {
         this.setState({
           movies: data
-        })     
+        }, () => {localStorage.setItem('data', JSON.stringify(this.state.movies))})     
   });
 }
 
