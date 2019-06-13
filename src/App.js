@@ -1,10 +1,8 @@
 import React from 'react';
 import {fetchMovies} from './services/fetchMovies';
-import './App.scss';
 import Home from './home/Home'
 import {Switch, Route} from 'react-router-dom';
 import MovieDetail from './movieDetail/MovieDetail'
-// import MoviesList from './list/MoviesList';
 
 class App extends React.Component
  {
@@ -12,7 +10,7 @@ class App extends React.Component
     super(props);
     
     this.state = {
-      movies: []
+      movies: [],
     }
     this.getMovies = this.getMovies.bind(this);
   }
@@ -28,6 +26,7 @@ class App extends React.Component
         })     
   });
 }
+
   render() {
     return (
       <Switch>
@@ -41,7 +40,6 @@ class App extends React.Component
         <MovieDetail 
           takeParams={takeParams}
           movies={this.state.movies}
-          // resetFilterName={this.resetFilterName}
         />
        }
        />

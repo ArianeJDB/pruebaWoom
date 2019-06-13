@@ -1,0 +1,31 @@
+.star {
+  color: #212529;
+}
+
+.rating {
+  text-align: center;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.movie_title {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.movie_container {
+  width: 200px;
+  //border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FE9C00;
+}
+
+.link_more {
+  text-align: end;
+  margin-right: 15px;
+}
+
+.more {
+  color: black;
+}

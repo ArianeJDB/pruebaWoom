@@ -17,10 +17,10 @@ class MoviesList extends React.Component {
               id={item.id}/>
             </li>
           )
-        })}
+        })
+        }
         </ul>
-    )
-    
+    ) 
   }
 }
 

@@ -1,0 +1,63 @@
+.detail_container {
+  // padding-top: 100px;
+  transform: translateY(150px);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 500px;
+  // border: solid black 2px;
+  padding: 45px;
+  background-color: #FE9C00;
+  box-shadow: 10px 10px 5px;
+  
+  
+}
+
+.img_detail {
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.movie_detail {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.title_detail {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.synopsis {
+  text-align: center;
+}
+
+.director_element {
+  list-style: none;
+}
+
+.cast_element {
+  list-style: none;
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 0 30px;
+}
+
+.rating_detail {
+  text-align: center;
+  font-weight: bold;
+}
+
+.link_volver {
+  color: black;
+}
+
+.star_detail {
+  color: #212529;
+}

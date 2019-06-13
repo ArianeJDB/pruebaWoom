@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Header from '../header/Header'
-
+import './_movieDetail.scss'
 
 class MovieDetail extends React.Component {
   render() {
@@ -11,30 +11,38 @@ class MovieDetail extends React.Component {
       <React.Fragment>
         <Header />
         {find !== undefined ?
+        <div className="movie_detail">
         <div className="detail_container">
-          <img src={find.image} alt={find.title}/>
-          <h2>{find.title}</h2>
-          <p>{find.synopsis}</p>
-          <ul>
+          <div className="img_detail">
+          <img src={find.image} alt={find.title} />
+          </div>
+          <h2 className="title_detail">{find.title}</h2>
+          <p className="synopsis">{find.synopsis}</p>
+          <div className="lists">
+          <ul className="directors_list">
+            <p>Director: </p>
             {find.director
               .map(item => {
                 return (
-                  <li>{item}</li>
+                  <li className="director_element">{item}</li>
                 )
               }
               )}
           </ul>
-          <ul>
+          <ul className="cast_list">
+            <p>Actores: </p>
             {find.cast
               .map(element => {
                 return (
-                  <li>{element}</li>
+                  <li className="cast_element">{element}</li>
                 )
               }
               )}
           </ul>
-          <p>{find.rating}</p>
-          <Link to="/">Volver</Link>
+          </div>
+          <p className="rating_detail"><span><i class="fas fa-star star_detail"></i></span>{find.rating}</p>
+          <Link to="/" className="link_volver">Volver</Link>
+        </div>
         </div>
         :
         <p>Loading...</p>}
