@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hola, esta es mi solución a la prueba técnica que me han pedido. 
+
+Para verlo en local, sólo hay que clonarse este repositorio y correr 'npm start' en la terminal. 
+También está subido al servidor de GitHub Pages.
 
 ## Available Scripts
 

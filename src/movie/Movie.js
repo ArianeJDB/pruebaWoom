@@ -9,7 +9,7 @@ class Movie extends React.Component {
       <div className="movie_container">
         <img src={this.props.image} alt={this.props.title} className='img' />
         <h3 className="movie_title">{this.props.title}</h3>
-        <p className="rating"><span><i class="fas fa-star star"></i></span>{this.props.rating}</p>
+        <p className="rating"><span><i className="fas fa-star star"></i></span>{this.props.rating}</p>
         <div  className="link_more">
         <Link to={`/detail/${this.props.id}`} className="more">Ver más</Link>
         </div>

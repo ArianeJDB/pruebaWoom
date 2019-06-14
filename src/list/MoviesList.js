@@ -9,7 +9,7 @@ class MoviesList extends React.Component {
       {this.props.movies
         .map(item => {
           return (
-            <li className="list_item">
+            <li className="list_item" key={item.id}>
               <Movie 
               title={item.title}
               image={item.image}
