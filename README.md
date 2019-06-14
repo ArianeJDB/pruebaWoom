@@ -1,71 +1,38 @@
 Hola, esta es mi solución a la prueba técnica que me han pedido. 
 
-Para verlo en local, sólo hay que clonarse este repositorio y correr 'npm start' en la terminal. 
+Para verlo en local, sólo hay que clonarse este repositorio y correr 'npm start' en la terminal y se abrirá en [http://localhost:3000](http://localhost:3000)
+
 También está subido al servidor de GitHub Pages.
 
-## Available Scripts
+## Requisitos funcionales:
 
-In the project directory, you can run:
+  [x] App desarrollada en React.js 
+  [x] Implementación de un servicio REST que retorna los JSON necesarios: He "mockeado" una API con Postman de manera manual, es decir, añadí los datos JSON de manera manual con los requisitos que pedían (título de la película, imagen, rating, actores, directores y sinopsis) y la URL generada por Postman la usé para hacer la petición de tipo GET. Este ha sido un reto ya que sólo había trabajado con alguna API que me proporcionaban para trabajar, estoy muy contenta de haber aprendido esto y de saber todo lo que se puede hacer con ello.
+  [x] Componentes reutilizables: Los componentes llevan una estructura de carpeta en laque están incluidos tanto el componente .js como el archivo .scss con sus respectivos estilos. Se reutiliza el componente 'header', tanto en la Home como en el Detalle; el componente 'Movie', siendo cada elemento del listado y el componente 'MovieDetail' siendo el mismo pero con diferente información, de acuerdo a lo que llega por props.
+  [x] Estilos aparte y evitar el “style=”.
 
-### `npm start`
+## Requisitos no funcionales:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[x] Listado de películas con sólo la imagen, título y rating.
+[x] Diseño libre, no hace falta que sea vistoso: Dí prioridad al desarrollo de la funcionalidad y lo nuevo que tuve que aprender para desarrollarlo, por lo que el diseño es muy sencillo.
+[NO] Paginación es opcional: No desarrollé paginación ya que necesitaba más data y, al ser opcional, lo dejé para lo último pero no me dió tiempo. Queda pendiente.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+## Opciones no requeridas desarrolladas:
+[x] CSS usando preprocesadores (SASS, LESS): He instalado 'npm node sass' y cada componente tiene su archivo .scss
+[x] Implementación de la solución con un backend funcional (no es necesario que tenga lógica, puede ser un servicio REST dummy que retorne los JSON necesarios): como he dicho antes, desarrollé un mock de una API manualmente mediante Postman y responde correctamente a la petición por fetch.
+[x] Clean code/clean architecture: Cada componente está dentro de una carpeta con su archivo de estilos. Intenté que estuviese bien indentado, sin comentarios y sin console.log(). Estan los componentes header, home (primera route que contiene el MovieList), list (con el archivo del listado que se pinta tras la petición fetch), movie (quien tiene la tarjeta de cada película del listado con su contenido), movieDetail (la otra route donde aparece el detalle de cada película con más información) y services (que contiene el archivo con la variable para el fetch y la url de la API).
+[x] Buenas prácticas.
+[x] Versión Progressive Web App (PWA): este ha sido otro reto al desarrollar esta prueba, ya que no conocía el término, por lo que me documenté y pasé la extensión 'Lighthouse' y pude aprender la importancia de que una app sea PWA y aprendí a usar el service worker y, luego de eso, el reporte de LightHouse se ha aprobado en su mayoría (no en su totalidad,quedan detalles en cada apartado) bien. 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![report](report.png)
+![pwareport1](pwareport1.png)
+![pwareport2](pwareport2.png)
 
-### `npm run build`
+## Opciones no requeridas no desarrolladas:
+[x] Uso de Bootstrap, Material design, Foundation, other: No estoy familiarizada con el uso de Bootstrap ni otra librería, por lo que preferí usar los estilos por SASS de manera manual, ya que me siento más cómoda. De haber tenido más tiempo, lo hubiese intentado ya que me documenté y hay una librería de bootsrap para React, que se llama reactrap y me llama la atención.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Muchas gracias, espero que les guste
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Ari
