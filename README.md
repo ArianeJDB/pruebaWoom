@@ -24,10 +24,7 @@ También está subido al servidor de GitHub Pages.
 [x] Clean code/clean architecture: Cada componente está dentro de una carpeta con su archivo de estilos. Intenté que estuviese bien indentado, sin comentarios y sin console.log(). Estan los componentes header, home (primera route que contiene el MovieList), list (con el archivo del listado que se pinta tras la petición fetch), movie (quien tiene la tarjeta de cada película del listado con su contenido), movieDetail (la otra route donde aparece el detalle de cada película con más información) y services (que contiene el archivo con la variable para el fetch y la url de la API).
 [x] Buenas prácticas.
 [x] Versión Progressive Web App (PWA): este ha sido otro reto al desarrollar esta prueba, ya que no conocía el término, por lo que me documenté y pasé la extensión 'Lighthouse' y pude aprender la importancia de que una app sea PWA y aprendí a usar el service worker y, luego de eso, el reporte de LightHouse se ha aprobado en su mayoría (no en su totalidad,quedan detalles en cada apartado) bien. 
-
-![report](https://raw.githubusercontent.com/ArianeJDB/pruebawoom/master/path/to/report.png)
-![pwareport1](https://raw.githubusercontent.com/ArianeJDB/pruebawoom/master/path/to/pwareport1.png)
-![pwareport12](https://raw.githubusercontent.com/ArianeJDB/pruebawoom/master/path/to/pwareport2.png)
+(Las imágenes del reporte están en ficheros dentro de 'images').
 
 ## Opciones no requeridas no desarrolladas:
 [x] Uso de Bootstrap, Material design, Foundation, other: No estoy familiarizada con el uso de Bootstrap ni otra librería, por lo que preferí usar los estilos por SASS de manera manual, ya que me siento más cómoda. De haber tenido más tiempo, lo hubiese intentado ya que me documenté y hay una librería de bootsrap para React, que se llama reactrap y me llama la atención.
