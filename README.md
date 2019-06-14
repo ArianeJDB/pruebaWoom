@@ -31,8 +31,9 @@ También está subido al servidor de GitHub Pages.
 [x] Clean code/clean architecture: Cada componente está dentro de una carpeta con su archivo de estilos. Intenté que estuviese bien indentado, sin comentarios y sin console.log(). Estan los componentes header, home (primera route que contiene el MovieList), list (con el archivo del listado que se pinta tras la petición fetch), movie (quien tiene la tarjeta de cada película del listado con su contenido), movieDetail (la otra route donde aparece el detalle de cada película con más información) y services (que contiene el archivo con la variable para el fetch y la url de la API).
 [x] Buenas prácticas. Está hecho responsive para movil, tablet y pantalla grande. Se hace destructuring al pasar props.
 
-[x] Versión Progressive Web App (PWA): este ha sido otro reto al desarrollar esta prueba, ya que no conocía el término, por lo que me documenté y pasé la extensión 'Lighthouse' y pude aprender la importancia de que una app sea PWA y aprendí a usar el service worker y, luego de eso, el reporte de LightHouse se ha aprobado en su mayoría (no en su totalidad,quedan detalles en cada apartado) bien. 
+[x] Versión Progressive Web App (PWA): este ha sido otro reto al desarrollar esta prueba, ya que no conocía el término, por lo que me documenté y vi que uno de los requisitos era que sea una app que cargara offline. Tenía entendido que tener una página que cargue offline era guardando la data en el LocalStorage, por lo que eso está incluído en la app, pero pasé la extensión 'Lighthouse' y vi que no pasaba esa parte de la prueba, por lo que seguí leyendo y pude aprender la importancia de que una app sea PWA y aprendí a usar el service worker y, luego de eso, el reporte de LightHouse se ha aprobado en su mayoría (no en su totalidad,quedan detalles en cada apartado) bien. 
 (Las imágenes del reporte están en ficheros dentro de 'images').
+ 
 
 ## Opciones no requeridas no desarrolladas:
 
