@@ -25,9 +25,9 @@ También está subido al servidor de GitHub Pages.
 [x] Buenas prácticas.
 [x] Versión Progressive Web App (PWA): este ha sido otro reto al desarrollar esta prueba, ya que no conocía el término, por lo que me documenté y pasé la extensión 'Lighthouse' y pude aprender la importancia de que una app sea PWA y aprendí a usar el service worker y, luego de eso, el reporte de LightHouse se ha aprobado en su mayoría (no en su totalidad,quedan detalles en cada apartado) bien. 
 
-![report](report.png)
-![pwareport1](pwareport1.png)
-![pwareport2](pwareport2.png)
+![report](http://url/to/report.png)
+![pwareport1](http://url/to/pwareport1.png)
+![pwareport2](http://url/to/pwareport2.png)
 
 ## Opciones no requeridas no desarrolladas:
 [x] Uso de Bootstrap, Material design, Foundation, other: No estoy familiarizada con el uso de Bootstrap ni otra librería, por lo que preferí usar los estilos por SASS de manera manual, ya que me siento más cómoda. De haber tenido más tiempo, lo hubiese intentado ya que me documenté y hay una librería de bootsrap para React, que se llama reactrap y me llama la atención.
