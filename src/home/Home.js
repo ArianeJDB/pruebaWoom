@@ -5,14 +5,15 @@ import './_home.scss'
 
 class Home extends React.Component {
   render() {
+    const { movies, handleFilter } = this.props;
     return (
       <React.Fragment>
         <Header />
         <div className="home_container">
         <h1 className="title">Mis películas favoritas</h1>
         <MoviesList 
-        movies={this.props.movies}
-        handleFilter={this.handleFilter}
+        movies={movies}
+        handleFilter={handleFilter}
         />
         </div>
       </React.Fragment>
